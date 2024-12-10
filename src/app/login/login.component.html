@@ -1,0 +1,41 @@
+<!-- 
+<form class="form" [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
+    <mat-form-field class="full-width">
+      <input matInput placeholder="First Name" [formControl]="firstNameFormControl" id="firstName">
+      <mat-error *ngIf="firstNameFormControl.hasError('required')">
+        First name is <strong>required</strong> 
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <input matInput placeholder="Last Name" [formControl]="lastNameFormControl"  id="lastName">
+        <mat-error *ngIf="lastNameFormControl.hasError('required')">
+            Last Name is <strong>required</strong>
+          </mat-error>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Email" [formControl]="emailFormControl">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Date of Birth" [formControl]="birthDateFormControl">
+      </mat-form-field>
+      <button mat-button>Click me!</button>
+  </form> -->
+  
+  <form class="form" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Email" formControlName="email">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Password" formControlName="password">
+      </mat-form-field>
+      <div class="form-element">
+        <button mat-raised-button color="primary" type="submit" class="button">Submit Form</button>
+      </div>
+    </form>
+

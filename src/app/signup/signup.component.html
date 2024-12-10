@@ -1,0 +1,24 @@
+  
+<form class="form" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <mat-form-field class="full-width">
+      <input matInput placeholder="First Name" formControlName="firstName">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <input matInput placeholder="Last Name" formControlName="lastName">
+
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Email" formControlName="email">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Password" formControlName="password">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Date of Birth" formControlName="birthDate">
+      </mat-form-field>
+      <div class="form-element">
+        <button mat-raised-button color="primary" type="submit" class="button">Submit Form</button>
+      </div>
+    
+    </form>
+
